@@ -1,16 +1,42 @@
-# neiroteh
+# Приложение для регистрации сигналов
 
-A new Flutter project.
+Это приложение на Python с использованием PyQt5 предоставляет интерфейс для выбора типа сигнала для регистрации.
 
-## Getting Started
+## Установка зависимостей
 
-This project is a starting point for a Flutter application.
+Перед запуском приложения установите необходимые зависимости:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+pip install -r requirements.txt
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Запуск приложения
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Для запуска приложения выполните команду:
+
+```bash
+python main.py
+```
+
+## Использование
+
+После запуска откроется окно с:
+- Логотипом NeuroTech в верхней части
+- Надписью "выберите, какой сигнал регистрировать:" 
+- Четырьмя кнопками внизу:
+  - ЭКГ (электрокардиограмма)
+  - ЭМГ (электромиограмма)
+  - ФПГ (фотоплетизмограмма)
+  - Дыхание
+
+Нажмите на любую кнопку, чтобы выбрать соответствующий тип сигнала. В текущей реализации выбор выводится в консоль, но может быть расширен для реальной регистрации сигналов.
+
+## Структура проекта
+
+- `main.py` - основной файл приложения
+- `requirements.txt` - зависимости проекта
+- `imgs/` - каталог с изображениями, включая логотип neurotech.svg
+
+## Настройка
+
+Если у вас возникли проблемы с отображением SVG-логотипа, приложение автоматически отобразит текстовую версию логотипа.
